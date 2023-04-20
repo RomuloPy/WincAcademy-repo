@@ -1,0 +1,185 @@
+header{
+    font: bold 40px Papyrus;
+    text-align: center;
+    padding: 5%;
+    color: blanchedalmond;
+    border: 5px blanchedalmond dotted;
+    margin: 0 auto;
+    width: 85%;
+    margin-top: 25px;
+}
+
+body{
+    margin: 0;
+    background-color: #2F303A;
+}
+
+.container{
+    border: 1px blanchedalmond solid;
+    border-radius: 10px;
+    padding-top: 7%;
+    padding-bottom: 10%;
+    padding-left: 7%;
+    background-image: url('../images/bridge.jpeg');
+    background-size: cover;
+    margin: 10%;
+    font: bold 20px Courier New;
+    color: black;
+}
+
+main{
+    padding-bottom: 20px;
+}
+
+li{
+    padding-top: 50px;
+    display: inline;
+    font: bold 20px Verdana;
+    color: azure;
+    margin: 20px;
+}
+
+ul a{
+    text-decoration: none;
+}
+
+li:hover{
+    color: red;
+}
+
+.info{
+    padding-top: 35px;
+    font: normal 15px Verdana;
+    
+}
+
+.info a{
+    text-decoration: none;
+    color: white;
+
+}
+
+
+a:hover{
+    color: red;
+}
+
+footer{
+    border: 5px white double;
+    margin: 0 2%;
+    margin-bottom: 20px;
+    padding: 5px;
+    font: italic 25px Brush Script MT;
+    color: white;
+    text-align: center;
+}
+
+.about{
+    text-align: center;
+}
+
+.contact{
+    text-align: center;
+}
+
+#romulo{
+    font: bold 25px Courier New;
+    margin-top: 8%; 
+}
+
+.hobby1{
+    background-image: url('../images/music.png');
+    background-size: cover;
+    margin: 5%;
+    font: italic 20px Courier New;
+    color:white;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-bottom: 40%;
+}
+
+.hobby2{
+    background-image: url('../images/swimming.png');
+    background-size: cover;
+    margin: 5%;
+    font: italic 20px Courier New;
+    color:white;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-bottom: 40%;
+}
+
+.hobby3{
+    background-image: url('../images/jogging.png');
+    background-size: cover;
+    margin: 5%;
+    font: italic 20px Courier New;
+    color:white;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-bottom: 40%;
+}
+
+.back{
+    padding-left: 5%;
+
+}
+.back a{
+    text-decoration: none;
+    font: normal 15px Verdana;
+    color: blanchedalmond;
+    margin-left: 15px;
+}
+
+form {
+    padding: 100px;
+    font: normal 15px verdana;
+    color: white;
+}
+
+@media screen and (max-width : 480px) {
+    header {
+        padding: 2%;
+        font-size: 90%;
+    }
+    .container {
+        font-size: 70%;
+    }
+    .info a {
+        font-size: 60%;
+    }
+    footer {
+        font-size: 80%;
+    }
+    li{
+        font-size: 120%;
+    }
+}
+
+@media (min-width: 1024px) {
+    body {
+        background-image: url('../images/wood-background.jpg');
+        background-size: cover;
+    }
+    header {
+        color: white;
+        font-size: 80%;
+    }
+    .container {
+        color: blue;
+        font-size: 80%;
+        line-height: 1.5rem;
+    }
+    li{
+        color:tomato;
+        font-size: 90%;
+    }
+    .info a{
+        color: yellowgreen;
+        font-size: 70%;
+    }
+    footer {
+        color: lightblue;
+        font-size: 80%;
+    }
+}

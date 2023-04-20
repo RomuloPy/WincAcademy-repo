@@ -1,0 +1,84 @@
+- name: Deploy to remote server
+  run: |
+    ssh -i <(echo "${{ secrets.SSH_PRIVATE_KEY }}") <username>@<host> -p <port> "cd /path/to/your/app && git pull"
+
+
+
+steps:
+  - name: Deploy to DigitalOcean
+uses: appleboy/ssh-action@v0.1.8
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          key: ${{ secrets.CD_ASSIGNMENT_SECRET }}
+          port: ${{ secrets.PORT }}
+          script_stop: true
+          script: |
+            cd /root/actions-runner/flask-app/CD-Assignment-WincAcademy/CD-Assignment-WincAcademy
+            git pull
+            git status
+            sudo systemctl restart nginx
+
+  deploy:
+    needs: run-tests
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Deploy to DigitalOcean
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.SSH_PRIVATE_KEY }}
+          username: ${{ secrets.SSH_PRIVATE_KEY }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          script_stop: true
+          script: |
+            cd /root/actions-runner/flask-app/CD-Assignment-WincAcademy/CD-Assignment-WincAcademy
+            git pull
+            git status
+
+
+
+deploy:
+    needs: run-tests
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Deploy to DigitalOcean
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.SSH_PRIVATE_KEY }}
+          username: ${{ secrets.SSH_PRIVATE_KEY }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          script_stop: true
+          script: |
+            eval "$(ssh-agent -s)"
+            ssh-add ~/.ssh/SERVER-GITHUB-PULL
+            cd /root/actions-runner/flask-app/CD-Assignment-WincAcademy/CD-Assignment-WincAcademy
+            git pull
+            git status
+            sudo systemctl restart nginx
+
+
+
+
+deploy:
+    needs: run-tests
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Deploy to DigitalOcean
+        run: ssh -i ${{ secrets.SSH_PRIVATE_KEY }} root@159.65.201.52 -p 22 cd /root/actions-runner/flask-app/CD-Assignment-WincAcademy/CD-Assignment-WincAcademy
+            git add *
+            git stash
+            git pull
+
+
+
+
+
+    - name: Add gunicorn3 path to PATH
+      run: export PATH="/usr/bin:$PATH"
+
+    - name: Kill running gunicorn3 process
+      run: pkill -f -v gunicorn3
+      
+    - name: Start gunicorn3
+      run: |
+        /usr/bin/gunicorn3 --workers=3 app:app --daemon

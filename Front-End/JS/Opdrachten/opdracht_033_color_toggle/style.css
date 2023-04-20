@@ -1,0 +1,103 @@
+body {
+    background-color: lightgrey;
+}
+
+.btn {
+    width: 60px;
+    height: 60px;
+    background-image: url("img/hamburger_menu.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    cursor: pointer;  
+}
+
+.btn:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.flexbox {
+    
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    gap: 3px;
+    position: fixed;
+    left: -350px;
+    transition: all ease-in-out;
+    transition-duration: 0.5s;
+    
+    
+}
+
+.flexbox:hover {
+    cursor: pointer;
+}
+
+.home {
+    background-color: lightgrey;
+    height: 50px;
+    text-align: center;
+    
+    
+}
+
+.home:hover {
+    opacity: 0.7;
+}
+
+.red {
+    background-color: red;
+    height: 50px;
+    text-align: center;
+}
+
+.red:hover {
+    opacity: 0.7;
+}
+
+.orange {
+    background-color: orange;
+    height: 50px;
+    text-align: center;
+}
+
+.orange:hover {
+    opacity: 0.7;
+}
+
+.purple {
+    background-color: purple;
+    height: 50px;
+    text-align: center;
+}
+
+.purple:hover {
+    opacity: 0.7;
+}
+
+.green {
+    background-color: green;
+    height: 50px;
+    text-align: center;
+}
+
+.green:hover {
+    opacity: 0.7;
+}
+
+.colorName {
+    padding-left: 40%;
+    width: 200px;
+    text-align: center;
+    font-family: arial;
+    font-size: 40px;
+}
+
+.activeColorName::before {
+    content: none;
+    background-color: none;
+
+}
+

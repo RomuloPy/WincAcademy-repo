@@ -1,0 +1,11 @@
+$textColor: #090b08;
+$backgrndColor: #c0eea9;
+$shadowColor: rgba(0, 0, 0, 0.75);
+$borderColor: #000;
+$globalPadding: 20px;
+
+@mixin textStyling {
+    max-width: 700px;
+    text-align: center;
+    padding: $globalPadding;
+  }

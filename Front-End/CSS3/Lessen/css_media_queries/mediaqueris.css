@@ -1,0 +1,39 @@
+/* Letter size gets bigger as the screen grows*/
+@media (min-width: 600px) {
+    p {
+        font-size: 1.25rem;
+    }
+}
+
+/* Letter size and line spacing gets bigger as the screen grows*/
+@media (min-width: 800px) {
+    p {
+        font-size: 1.5rem;
+        line-height: 1.5;
+
+    }
+}
+/* Media querie must be after all CSS code */
+
+/* 
+
+@media (min-width: 600px) {
+    mobile first
+}
+
+@media (max-width: 600px) {
+    desktop first
+}
+
+@media (orientation: landscape) {   
+}
+
+@media (orientation: portrait) {
+}
+
+@media screen and(...) {
+}
+
+@media print and(...) {    
+}
+*/

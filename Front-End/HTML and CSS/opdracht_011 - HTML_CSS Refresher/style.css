@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin-top: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.visit_cards {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.visit_card {
+    display: grid;
+    width: 350px;
+    height: 220px;
+    border: 1px lightgrey solid;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 13% 13% 30% 30%;
+    grid-template-areas:
+        "h1 h1 h1 h1 h1 av"
+        "ms ms ms ms ms av"
+        "ph ph ph ph ph ph"
+        "bu bu bu bu bu bu"
+}
+
+h1 {
+    grid-area: h1;
+    padding-top: 18px;
+    padding-left: 10px;
+}
+
+.membership {
+    grid-area: ms;
+    padding-top: 20px;
+    padding-left: 10px;
+    color: gray;
+}
+
+.avatar {
+    grid-area: av;
+    padding-right: 18px;
+    padding-top: 18px;
+}
+.phrase {
+    grid-area: ph;
+    padding-top: 30px;
+    padding-left: 10px;
+    color:rgb(54, 53, 53);  
+}
+
+span {
+    font-weight: bold;
+}
+
+.buttons {
+    margin-top: 50px;
+    padding-top: 15px;
+    height: 60px;
+    border-top: 1px rgba(211, 211, 211, 0.363) solid;
+    grid-area: bu;
+    display: flex;
+    justify-content: center;    
+    align-self: center;
+    text-align: center;
+}
+
+.approve,
+.decline {
+    height: 40px;
+    width: 150px;
+    border: 2px lightgreen solid;
+    border-right: red;
+    color: lightgreen;
+    border-radius: 5px;
+    background-color: white;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.approve {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.decline {
+    border: 2px red solid;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    color: red;
+}

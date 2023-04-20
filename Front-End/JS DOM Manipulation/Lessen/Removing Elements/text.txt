@@ -1,0 +1,10 @@
+///////////////////////
+// Removing Elements //
+///////////////////////
+
+
+Step 1: Select the parent.
+
+Step 2: Select the child you want to remove.
+
+Step 3: Call parent.removeChild(child).

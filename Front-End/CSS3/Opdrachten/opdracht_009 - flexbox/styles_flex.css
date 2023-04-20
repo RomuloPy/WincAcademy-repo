@@ -1,0 +1,64 @@
+.blog_container {
+    background-color: dimgrey;
+    border: 2px solid black;
+    width: 98vw;
+    margin: 5px;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    align-content: center;
+}
+
+
+.blogpost_drums {
+    background-color: blanchedalmond;
+    border: 1px solid black;
+    margin: 5px;
+    padding: 5px;
+    font: normal 15px century;
+    text-align: center;
+    align-self: flex-end;
+    
+}
+
+.blogpost_basses {
+    background-color: blanchedalmond;
+    border: 1px solid black;
+    margin: 5px;
+    padding: 5px;
+    font: normal 15px century;
+    text-align: center;
+    align-self: flex-end;
+}
+
+.blogpost_guitars {
+    background-color: blanchedalmond;
+    border: 1px solid black;
+    margin: 5px;
+    padding: 5px;
+    font: normal 15px century;
+    text-align: center;
+    align-self: flex-end;
+    flex-grow: 1;
+}
+
+.blogpost_pianos {
+    background-color: blanchedalmond;
+    border: 1px solid black;
+    margin: 5px;
+    padding: 5px;
+    font: normal 15px century;
+    text-align: center;
+    align-self: flex-end;
+}
+
+.blogpost_percussions {
+    background-color: blanchedalmond;
+    border: 1px solid black;
+    margin: 5px;
+    padding: 5px;
+    font: normal 15px century;
+    text-align: center;
+    align-self: flex-end;
+}

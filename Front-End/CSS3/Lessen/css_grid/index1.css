@@ -1,0 +1,33 @@
+.container {
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 40px 200px 40px;
+}
+
+.header {
+    grid-column-start: 1;
+    grid-column-end: 3; /* columns = 2 but column lines = 3*/
+
+    /* same as above */
+    grid-column: 2 / -1;
+
+
+}
+
+.menu {
+    grid-row: 1 / -1;
+}
+
+.content {
+    grid-column: 2 / -1;
+}
+
+.footer {
+    grid-column: 1 / 3;
+    /* same as above*/
+    grid-column: 1 / span 2;
+    /* same as above*/
+    grid-column: 2 / -1  /* use the "-1" when we don't know how many columns we will have...*/;
+}
+

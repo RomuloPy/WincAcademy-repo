@@ -1,0 +1,35 @@
+/////////////////////////////////
+//  Simple step-by-step plan:  //
+/////////////////////////////////
+
+Step 1: create your element dynamically with JavaScript.
+
+// For example:
+const listElement = document.createElement("li")
+
+//////////////////////////////////////////////////////////////////////////////////////
+
+
+Step 2: Add dynamically (multiple) properties to your HTML element.
+
+//For example:
+listElement.classList.add("list-item-class");
+
+
+//////////////////////////////////////////////////////////////////////////////////////
+
+
+Step 3: Select the element you want to attach your new element to.
+
+//For example (if you only have 1 ul):
+const list = document.querySelector("ul");
+
+
+//////////////////////////////////////////////////////////////////////////////////////
+
+
+Step 4: Determine how the existing element (in this case list) and the new element (in this case list-item)
+relate to each other (in this case a parent <> child). Append the new element (list-item) to the selected element (list) with the appropriate function.
+
+//For example:
+list.appendChild(listItem);

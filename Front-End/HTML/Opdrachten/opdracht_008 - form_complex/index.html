@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cooking Website</title>
+</head>
+
+<body >
+    <header>Let's Cook</header>
+    <div class="form_attr">
+    <form name="contact" method="POST" data-netlify="true">
+        <div class="data">
+            <p>
+                <label>Name: <input type="name" name="name"></label>
+            </p>
+            <p>
+                <label>E-mail: <input type="email" name="email"></label>
+            </p>
+            <p>
+                <label>Phone nr.: <input type="tel" name="phone"></label>
+            </p>
+            <p>
+                <label>Age:<input type="number" name="age" size=></label>
+            </p>
+            <p>
+                <label>Date of birth: <input type="date" name="birthdate"></label>
+        </div>
+        </p>
+        <p>
+            <label>Gender:
+                <input type="radio" name="gender" value="Male"></label>
+                <label for="Male">Male</label>
+                
+                <input type="radio" name="gender" value="Female">
+                </label><label for="Female">Female</label>
+                
+                <input type="radio" name="gender" value="Other"></label>
+                <label for="Other">Other</label>
+        </p>
+        <p>
+            <label>Favourite cuisine:
+                <input type="checkbox" name="french" value="French"></label>
+                <label for="French">French</label>
+
+                <input type="checkbox" name="italian" value="Italian"></label>
+                <label for="Italian">Italian</label>
+
+                <input type="checkbox" name="spanish" value="Spanish"></label>
+                <label for="Spanish">Spanish</label>
+
+                <input type="checkbox" name="arabic" value="Arabic"></label>
+                <label for="Arabic">Arabic</label>
+        </p>
+        <p>
+            <label for="favcolor">Select your favorite apron color:</label>
+            <input type="color" id="favcolor" name="favcolor" value="#ff0000">
+        </p>
+        <p>
+            <textarea name="biography" id="" cols="65" rows="10" placeholder="Type biography here..."></textarea>
+        </p>
+        <p>
+            <label for="fileupload">Upload latest recipe:</label>
+            <input type="file" name="fileupload">
+        </p>
+        <p>
+            <label for="recipe">URL to recipe website</label>
+            <input type="url" name="recipe">
+        </p>
+        <p>
+            <button type="reset">Reset</button>
+            <button type="submit">Send</button>
+        </p>
+    </form>
+    </div>
+    <footer><h3>&copy; 2021 This Website was made by Rómulo Santos@WincAcademy</h3></footer>
+</body>
+</html>

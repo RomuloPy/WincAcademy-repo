@@ -1,0 +1,14 @@
+
+@import "./variables";
+@import "./header";
+
+
+.contact {
+    @include flexCenter(row, blue);
+}
+
+/*
+.contact {
+    @extend header;         - extends the properties of the header to contact (heritance)
+}
+*/

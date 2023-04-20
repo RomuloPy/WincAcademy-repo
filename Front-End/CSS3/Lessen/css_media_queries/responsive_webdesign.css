@@ -1,0 +1,25 @@
+/* @media <media-type> and (expressions) {}
+
+Examples...
+
+This will apply the style inside {} to all TV's with a minimum width of 1200px
+@media TV and (min-width: 1200px) {}
+
+This will apply the style inside {} to all devices with a screen with a maximum width of 800px
+@media screen and (max-width: 800px){}
+
+*/
+
+
+/* Suggested viewports
+
+// Smartphones (portrait)
+minimal width : 320px;
+
+// Tablets (portrait)
+minimal width : 768px
+
+// Desktop 
+minimal width : 1024px
+
+*/

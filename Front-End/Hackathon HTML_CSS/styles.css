@@ -1,0 +1,374 @@
+@font-face {
+    font-family: poppins;
+    src: url(/fonts/Poppins/Poppins-Light.ttf);
+}
+ 
+body {
+    background-color: #2F303A;
+    width: 320px;
+    margin: auto;
+    margin-top: 10px;
+    
+}
+
+.banner {
+    width: 100%;
+}
+
+h2 {
+    
+    font: normal 15px poppins;
+    color: white;
+    text-align: center;
+    margin-top: 0.5px;
+    margin-bottom: 20px;    
+}
+
+
+.container {
+   width: 320px;
+   display: flex;
+   justify-content: space-evenly;
+   margin-bottom: 20px;
+}
+ 
+li {
+    list-style-type: none;
+    font: normal 10px poppins;
+    color: white;
+    padding: 2px;
+    border-radius: 5px;
+    
+}
+
+a {
+    text-decoration: none;
+}
+
+main { 
+    width: 320px;
+}
+
+.soundcloud {
+    margin:10px;
+    width: 320px;
+    height: 200px;
+}
+
+footer {
+    width: 320px;
+    font: italic 15px poppins;
+    color: white;
+    text-align: center;
+    letter-spacing: 15px;
+    padding-top: 20px;
+}
+
+.container_background {
+    background-color: #2d3f81;
+    filter: opacity(48%);
+    border-radius: 5px;
+    padding: 1px;
+}
+
+
+.agenda {
+    width: 320px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: 30% 50% 10%;
+    grid-template-areas:
+        "d n l"
+        "d n l";
+}
+
+.name {
+    grid-area: n;
+    font: normal 12px poppins;
+    color: white;
+}
+
+.date {
+    grid-area: d;
+    font: normal 12px poppins;
+    color: white;
+}
+
+.location {
+    grid-area: l;
+    font: normal 12px poppins;
+    color: white;
+}
+
+.video1{
+    width: 300px;
+    height: 280px;
+    padding: 10px;
+}
+
+.videos {
+    width: 320px;
+    margin-top: 10%;
+}
+
+.band {
+    margin-top: 10px;
+    width: 320px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+.text-mireille {
+    font: normal 11px poppins;
+    color: white;
+    margin-bottom: 30px;
+    text-align: justify;
+
+}
+
+.text-marcel {
+    font: normal 11px poppins;
+    color: white;
+    margin-bottom: 30px;
+    text-align: justify;
+
+}
+
+
+.text-nico {
+    font: normal 11px poppins;
+    color: white;
+    margin-bottom: 30px;
+    text-align: justify;
+
+}
+
+.text-romulo {
+    font: normal 11px poppins;
+    color: white;
+    margin-bottom: 30px;
+    text-align: justify;
+}
+
+.form-attr {
+    margin-top: 30px;
+    width: 320px;
+    font: normal 10px poppins;
+    color: white;
+}
+.data {
+    width: 100px;
+    display: inline-block;
+}
+
+.button {
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+
+
+
+
+@media (min-width: 600px) {
+    body {
+        width: auto;
+    }
+    
+    header{
+        text-align: center;
+    }
+
+    .banner {
+        width: 50%; 
+    }
+
+    h2 {
+        font-size: 200%;
+        padding-bottom: 5%;
+    }
+
+    .container {
+        width: auto;
+        justify-content: center;
+        gap: 5%;
+    }
+
+    li {
+        list-style-type: none;
+        font: normal 20px poppins;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        padding: 5px;
+    }
+
+   .group_photo {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+
+    footer {
+        margin-top: 20px;
+        width: auto;
+        font: italic 20px poppins;
+        letter-spacing: 40px;
+    }
+
+    .agenda {
+        width: 600px;
+        margin: auto;
+        margin-top: 100px;
+        margin-bottom: 60px;
+        display: grid;
+        grid-template-columns: 30% 50% 10%;
+        grid-template-areas:
+            "d n l"
+            "d n l";
+    }
+    
+    .name {
+        grid-area: n;
+        font: normal 18px poppins;
+        color: white;
+    }
+    
+    .date {
+        grid-area: d;
+        font: normal 18px poppins;
+        color: white;
+    }
+    
+    .location {
+        grid-area: l;
+        font: normal 18px poppins;
+        color: white;
+    }
+
+    .soundcloud {
+        margin-top: 10%;
+        margin-bottom: 20%;
+        text-align: center;
+        width: 100%;
+    }
+
+    .music {
+        width: 800px;
+        height: 300px;
+    }
+
+    .videos {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-bottom: 10%;        
+    }
+
+    .video1{
+        width: 600px;
+        height: 600px;
+        padding: 20px;
+    }
+
+    .band {
+        margin: 5%;
+        padding: 40px;
+        width: 80vw;
+        display: grid;
+        grid-template-columns: 30% auto;
+        grid-template-areas: 
+            " mir tmir"
+            " mar tmar"
+            " nic tnic"
+            " rom trom";
+    }
+    
+    .mireille {
+        width: auto;
+        grid-area: mir;
+        padding-top: 2%;
+    }
+    
+    .text-mireille {
+        padding-top: 3%;
+        grid-area: tmir;
+        width: auto;
+        font: normal 15px poppins;
+        color: white;    
+    }
+    
+    .marcel {
+        grid-area: mar;
+        padding-top: 70%;
+
+
+    }
+    .text-marcel {
+        padding-top: 10%;
+        grid-area: tmar;
+        font: normal 15px poppins;
+        color: white;
+    }
+    
+    .nico {
+        grid-area: nic;
+        padding-top: 2%;
+
+    }
+    .text-nico {
+        grid-area: tnic;
+        font: normal 15px poppins;
+        color: white;
+    }
+    
+    .romulo {
+        grid-area: rom;
+        padding-top: 2%;
+
+    }
+    .text-romulo {
+        grid-area: trom;
+        font: normal 15px poppins;
+        color: white;
+    }
+
+    .form-attr {
+        margin-top: 30px;
+        padding-left: 10%;
+        width: 600px;
+        font: normal 14px poppins;
+        color: white;
+    }
+
+    .data {
+        width: 100px;
+        display: inline-block;
+    }
+
+    .textarea {
+        width: 70%;
+    }
+
+}
+
+@media (min-width: 1024px) {
+        
+    .form-attr {
+    margin-top: 60px;
+    padding-left: 25%;
+    width: auto;
+    font: normal 15px poppins;
+    }
+
+
+}

@@ -1,0 +1,33 @@
+<title>Class List</title>
+<link rel="stylesheet" href="http://youtube.local/assets/dcode.css">
+<link rel="stylesheet" href="http://youtube.local.assets.favicon.ico">
+
+<style media="screen">
+    .bold { font-weight: bold }
+    .red-bg { background: red }
+    .white-text { color: white }
+    .big-font { font-size: 36px }
+</style>
+
+<body>
+    <h2 id="title">Class List - dcode</h2>
+    <p id="myPara">
+        Yeah mate!
+    </p>
+</body>
+
+<script type="text/javascript">
+    const myPara = document.getElementById('myPara');
+
+    myPara.classList.add('bold', 'big-font');
+    myPara.classList.remove('bold');
+    myPara.classList.replace('big-font', 'red-bg');
+    
+    myPara.classList.toggle('red-bg');
+    myPara.classList.toggle('red-bg');
+    
+
+    console.log(myPara.classList.contains('white-text'));
+
+    console.log(myPara.classList)
+</script>

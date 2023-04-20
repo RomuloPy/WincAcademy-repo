@@ -1,0 +1,25 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+}
+
+p::before {         /* ::before is inside the p but before the content of p*/
+    content: "hello";        /* it doesn't work with IMAGES*/
+    background: red;
+    font-size: 20px;
+    color: white;
+    font-weight: 900;
+    display: block;
+}
+
+p::after {
+    content: "goodbye";         /* It can be used as a design element :) */
+    background: red;
+    font-size: 20px;
+    color: white;
+    font-weight: 900;
+    display: block;
+}
